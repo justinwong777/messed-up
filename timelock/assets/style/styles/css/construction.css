@@ -1,0 +1,151 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:110,400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:110,400,700');
+
+html {
+    font-family: roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+body {
+    background-color: #F5F5F5;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    color: black;
+    font-size: 40px;
+    font-weight: 800;
+}
+h2 {
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+}
+p {
+    color: black;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 150%;
+}
+
+input {
+  font-family: Open Sans;
+  font-size: 13px;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+label{
+  font-size: 12px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#navbar {
+    z-index:3;
+    position: fixed;
+    background-color: #4B93FF;
+    height: 45px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#pull-left {
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+}
+
+#pull-right {
+    position: absolute;
+    top:10px;
+    right: 100px;
+    display:flex;
+    flex-direction:row;
+}
+
+.left-nav-element {
+    font-weight:bold;
+}
+
+#notclick {
+  font-weight: 400;
+}
+
+.right-nav-element {
+    font-weight:bold;
+    margin-left:20px;
+    margin-right:20px;
+}
+
+#logo {
+    position: relative;
+    top: 30%;
+    height:20px;
+    width:120px;
+}
+
+#whitelogo {
+  position: relative;
+  top: 30%;
+  height:30px;
+  width:100px;
+  margin-top:8px;
+  left:56px;
+  padding:0;
+}
+
+#gear {
+  position: absolute;
+  left: 40%;
+  top: 60%;
+  width: 25%;
+}
+
+@-webkit-keyframes animate-rotate {
+    from {
+         -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+    }
+    to {
+         -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+    }
+}
+
+
+@-keyframes animate-rotate {
+  0% { transform: rotate(360deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.rotated-image
+{
+    -webkit-animation: animate-rotate 10s infinite;
+    animation: animate-rotate 10s infinite;
+}
+
+.rotated {
+  transform: rotate(45deg); /* Equal to rotateZ(45deg) */
+  background-color: pink;
+}
+
+#back {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+}
+
+#back:hover {
+  cursor: pointer;
+}
